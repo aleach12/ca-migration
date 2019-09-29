@@ -23,7 +23,7 @@ import pandas as pd
 
 
 ##reads in migration summary
-ca_sum = pd.read_csv("/Users/alanleach/Desktop/ca-mig-data/ca-sum.csv")
+ca_sum = pd.read_csv("./ca-sum.csv")
 
 ##retrieves state shapefiles from Tiger Web and merges with ca_sum
 geo_state = gpd.read_file("https://www2.census.gov/geo/tiger/TIGER2017/STATE/tl_2017_us_state.zip")
@@ -101,7 +101,7 @@ plt.close()
 
 
 ##reads in migration summary
-ca_in_sum = pd.read_csv("/Users/alanleach/Desktop/ca-mig-data/ca-in-sum.csv")
+ca_in_sum = pd.read_csv("./ca-in-sum.csv")
 
 ##retrieves state shapefiles from Tiger Web and merges with ca_sum
 geo_state = gpd.read_file("https://www2.census.gov/geo/tiger/TIGER2017/STATE/tl_2017_us_state.zip")
@@ -164,7 +164,7 @@ plt.title('Sources of Domestic Immigrants into California\n on Average Annually,
 
 plt.style.use('fivethirtyeight')
 
-plt.savefig('/Users/alanleach/Desktop/ca-mig-data/ca-immigrants.png', dpi = 1000)
+plt.savefig('./ca-immigrants.png', dpi = 1000)
 
 plt.show()
 
@@ -178,8 +178,8 @@ plt.close()
 
 
 ##reads in migration summary
-ca_in_sum = pd.read_csv("/Users/alanleach/Desktop/ca-mig-data/ca-in-sum.csv")
-ca_sum = pd.read_csv("/Users/alanleach/Desktop/ca-mig-data/ca-sum.csv")
+ca_in_sum = pd.read_csv("./ca-in-sum.csv")
+ca_sum = pd.read_csv("./ca-sum.csv")
 
 ##retrieves state shapefiles from Tiger Web and merges with ca_sum
 geo_state = gpd.read_file("https://www2.census.gov/geo/tiger/TIGER2017/STATE/tl_2017_us_state.zip")
@@ -244,7 +244,7 @@ plt.title('Annual Domestic Net Migrants into California, 2013-2017', fontdict={'
 
 plt.style.use('fivethirtyeight')
 
-plt.savefig('/Users/alanleach/Desktop/ca-mig-data/ca-net_migrants.png', dpi = 1000)
+plt.savefig('./ca-net_migrants.png', dpi = 1000)
 
 plt.show()
 
